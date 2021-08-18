@@ -1,0 +1,31 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": true,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:59154",
+      "sslPort": 0
+    }
+  },
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchUrl": "Api/Home",
+      "environmentVariables": {
+        "ENVIRONMENT": "REC",
+        "AZURE_STORAGE_CONNECTION_STRING": "DefaultEndpointsProtocol=https;AccountName=bsazureapirec;AccountKey=U/38Fsisnwi2rJ9ptwlxW/2mOw2tbCyHVBqez1IVjqVkXThpUOBWjN7AEw2NHn8oVyGKrB56oEzg88c3T1WWTA==;EndpointSuffix=core.windows.net",
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "Azure.Api.PROD": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "Api/Home",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Production"
+      },
+      "applicationUrl": "https://localhost:5001;http://localhost:5000"
+    }
+  }
+}
